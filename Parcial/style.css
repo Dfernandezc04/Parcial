@@ -1,0 +1,317 @@
+/*======================================================
+  BASE Y TIPOGRAFÍA
+========================================================*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9; /* Fondo gris muy claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #004d99; /* Azul institucional */
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #004d99;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+/*======================================================
+  BOTONES Y ENLACES
+========================================================*/
+.btn-primary, .btn-secondary, .btn-danger, .btn-success, .btn-info, .btn-small, .btn-logout {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 5px 5px 5px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+/* Botón Principal (Azul) */
+.btn-primary, .btn-login {
+    background-color: #007bff;
+    color: white;
+}
+.btn-primary:hover, .btn-login:hover {
+    background-color: #0056b3;
+}
+
+/* Botón Secundario (Gris/Claro) */
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Botón Peligro/Cancelar (Rojo) */
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Botón Éxito/Reservar (Verde) */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+/* Botón Info (Cian) */
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+.btn-info:hover {
+    background-color: #117a8b;
+}
+
+/* Botón Pequeño */
+.btn-small {
+    padding: 5px 10px;
+    font-size: 0.85em;
+}
+
+/* Botón de Logout */
+.btn-logout {
+    background-color: #6c757d;
+    color: white;
+}
+.btn-logout:hover {
+    background-color: #5a6268;
+}
+
+.large-btn {
+    padding: 12px 25px;
+    font-size: 1.1em;
+}
+
+
+/*======================================================
+  FORMULARIOS Y ENTRADAS
+========================================================*/
+.form-group, .filter-form label, .filter-form input, .filter-form select {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilo para los mensajes de error/éxito */
+.error-message, .success-message, .info-message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.info-message {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Alineación para el formulario de filtros */
+.filter-form {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+.filter-form input, .filter-form select {
+    width: auto;
+    min-width: 150px;
+}
+.filter-form label {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+
+/*======================================================
+  TABLAS DE DATOS
+========================================================*/
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: 600;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Colores de estado de Citas */
+.status-programada {
+    color: #007bff; /* Azul */
+    font-weight: bold;
+}
+.status-cancelada {
+    color: #dc3545; /* Rojo */
+    font-weight: bold;
+}
+
+
+/*======================================================
+  SECCIONES ESPECÍFICAS
+========================================================*/
+
+/* Login Page (index.php) */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+.login-container h2 {
+    color: #004d99;
+    border-bottom: none;
+}
+.btn-login {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Selector de Institución (dashboard.php) */
+.institution-selector {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #e6f7ff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #b3e0ff;
+}
+.current-institution {
+    font-weight: bold;
+    color: #004d99;
+    font-size: 1.1em;
+}
+.inline-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.inline-form select {
+    width: auto;
+    min-width: 120px;
+}
+
+/* Grid de Disponibilidad (agendar.php) */
+.availability-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+.slot-card {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-left: 5px solid #28a745; /* Borde verde para destacar */
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.slot-time {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #004d99;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.slot-card textarea {
+    min-height: 60px;
+    margin: 10px 0;
+}
+
+/*======================================================
+  ESTILOS DINÁMICOS PARA EL PANEL ADMIN
+========================================================*/
+
+/* NOTA: Estos se aplicarán al encabezado a través de la clase PHP */
+.header-css { 
+    background-color: #004d99 !important; 
+} 
+.header-minsa { 
+    background-color: #28a745 !important; 
+} 
+.header-oncologico { 
+    background-color: #e83e8c !important; /* Un tono de rosa fuerte */
+}
